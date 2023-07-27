@@ -1,0 +1,5 @@
+# Frontend Mentor Challenges
+
+| Level  | Challenge Title & Link                                                                     | Github Link                                                                        | Live Link                                                                | Used              |
+|--------|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------|-------------------|
+| Newbie | [QR Code Component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/) | [GitHub](/newbie/qr-code-component) | [Replit](https://frontendmentor-qr-code-component.toolsareplit.repl.co/) | react, @chakra-ui |

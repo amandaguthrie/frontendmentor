@@ -1,6 +1,16 @@
 import {extendTheme} from '@chakra-ui/react';
+import '@fontsource/outfit/400.css';
+import '@fontsource/outfit/700.css';
 
 export const myTheme = extendTheme({
+    breakpoints: {
+        base: '0em',
+        sm: '375px',
+        md: '640px',
+        lg: '800px',
+        xl: '1440px',
+        '2xl': '1600px'
+    },
     colors: {
         blueGray: {
             '100': '#F8FCFE',
@@ -22,6 +32,9 @@ export const myTheme = extendTheme({
         global: {
             body: {
                 bgColor: 'blueGray.500'
+            },
+            a: {
+                fontWeight: 'bold'
             }
         }
     }
