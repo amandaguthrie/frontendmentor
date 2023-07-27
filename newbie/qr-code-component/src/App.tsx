@@ -18,7 +18,7 @@ function App() {
                 <Card as='main'
                       variant='filled'
                       bgColor='white'
-                      shadow='sm'
+                      shadow='lg'
                       minH='auto'
                       minW='320px' // Measured from .jpg
                       maxW='320px' // Measured from .jpg
