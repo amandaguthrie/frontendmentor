@@ -1,10 +1,10 @@
 # QR Code Component
-
-![Static Badge](https://img.shields.io/badge/View_Live_Implementation-seagreen?style=for-the-badge&link=frontendmentor-qr-code-component.toolsareplit.repl.co)
+<a href="https://frontendmentor-qr-code-component.toolsareplit.repl.co" alt="View live implementation">
+<img src="https://img.shields.io/badge/View_Live_Implementation-seagreen?style=for-the-badge"></a>
 
 ## Design/Solution Comparison
-![Static Badge](https://img.shields.io/badge/Frontend_Mentor_Challenge-dodgerblue?style=for-the-badge&link=https%3A%2F%2Fwww.frontendmentor.io%2Fchallenges%2Fqr-code-component-iux_sIO_H)
-
+<a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" alt="Frontend Mentor Challenge">
+<img src="https://img.shields.io/badge/Frontend_Mentor_Challenge-dodgerblue?style=for-the-badge" /></a>
 
 > Clicking on an image will open it in a new tab.
 
