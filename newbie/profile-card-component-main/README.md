@@ -15,4 +15,6 @@
 |Mobile| <img src="/newbie/profile-card-component-main/design/mobile-design.jpg" alt="Mobile Design" width="375px" alt="Mobile Design" href="/newbie/profile-card-component-main/design/mobile-design.jpg" target="_blank"> | <img src="/newbie/profile-card-component-main/solution/ag-profile-card-component-mobile.png" alt="Mobile Solution" width="375px" href="/newbie/profile-card-component-main/solution/ag-profile-card-component-mobile.png" target="_blank"> |
 
 ## Build Notes
+* Used `bg` shorthand in the theme extension to specify two background images, positions, sizes, and fallback color for the body background. Used responsive breakpoints to hit 375px and 1440px circle positioning targets. Added a medium breakpoint but didn't perfect it.
+* Used an array map for the statistics to avoid applying the same props three times.
 

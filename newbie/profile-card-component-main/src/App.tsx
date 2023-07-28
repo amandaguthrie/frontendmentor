@@ -36,6 +36,7 @@ function App() {
                     size='lg'
                     variant='filled'
                     minHeight='375px'
+                    maxHeight='375px'
                     minWidth={{base: '330px', lg: '350px'}}
                     maxWidth={{base: '330px', lg: '350px'}}
                     padding={0}
