@@ -3,7 +3,8 @@ import BaseStack from "./common/BaseStack.tsx";
 
 function HeaderBar() {
     return (
-        <BaseStack bgColor='transparent'
+        <BaseStack as="nav"
+                   bgColor='transparent'
                    color='white'
                    alignItems='center'
                    maxWidth={{lg: '68.75rem'}}
@@ -20,6 +21,7 @@ function HeaderBar() {
                        objectFit='contain'
                        maxHeight={{lg: '1.75rem'}}
                        maxWidth={{base: '5.5625rem', lg: '7.125rem'}}
+                       alt="Skilled Logo"
 
                 />
 

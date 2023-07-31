@@ -11,7 +11,8 @@ function LandingPage() {
         xl: `url('/image-hero-desktop@2x.png') no-repeat 52vw -146.13px / 992px 937px transparent`
     }
     return (
-        <Flex bg={responsiveBackground}
+        <Flex as="main"
+              bg={responsiveBackground}
               direction='column'
               alignItems='center'
               width='100vw'

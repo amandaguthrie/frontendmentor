@@ -3,7 +3,8 @@ import BaseStack from "./common/BaseStack.tsx";
 
 function FooterBar() {
     return (
-        <BaseStack bgColor='dustyPurple.900'
+        <BaseStack as="footer"
+                   bgColor='dustyPurple.900'
                    color='white'
                    alignItems='center'
                    paddingY={{base: '1rem', md: '1.5rem', '2xl': '2.5rem'}}
@@ -19,6 +20,7 @@ function FooterBar() {
                        objectFit='contain'
                        maxHeight={{lg: '1.75rem'}}
                        maxWidth={{base: '5.5625rem', lg: '7.125rem'}}
+                       alt="Skilled Logo"
 
                 />
 

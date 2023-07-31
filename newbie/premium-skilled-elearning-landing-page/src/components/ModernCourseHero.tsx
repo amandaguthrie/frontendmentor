@@ -3,7 +3,10 @@ import BaseStack from "./common/BaseStack.tsx";
 
 function ModernCourseHero() {
     return (
-        <BaseStack direction={{base: 'column'}}
+        <BaseStack as='section'
+                   id='modern-course-hero'
+                   aria-labelledby='modern-course-hero-heading'
+                   direction={{base: 'column'}}
                    marginTop={{base: '2.3125rem', md: '6.1875rem', lg: '11.625rem'}}
                    maxHeight={{base: 'calc(50rem - 3rem - 2.3125rem)', md: 'calc(40.0625rem - 3.5rem - 6.1875rem)', lg: 'calc(49.5625rem - 11.625rem)'}}
                    alignItems={{lg: 'center'}}
@@ -19,7 +22,7 @@ function ModernCourseHero() {
                        paddingY={0}
                        maxWidth={{md: '55vw', lg: '40%'}}
                 >
-                    <Heading size='lg'>
+                    <Heading id='modern-course-hero-heading' as='h1' size='lg' >
                         Maximize skill, minimize budget
                     </Heading>
                     <Text textStyle='mediumText' color='desaturatedPurple.500'>Our modern courses across a range of

@@ -5,7 +5,10 @@ import BaseStack from "./common/BaseStack.tsx";
 
 function PopularCourseGrid() {
     return (
-        <BaseStack direction={{base: 'column', md: 'row'}}
+        <BaseStack as="section"
+                   id='popular-course-list'
+                   aria-labelledby='popular-course-list-heading'
+                   direction={{base: 'column', md: 'row'}}
                    wrap='wrap'
                    columnGap={{base: '1rem', md: '0.625rem', lg: '1.875rem'}}
                    rowGap={{base: '1rem', md: '2rem', lg: '3.5rem'}}
@@ -27,7 +30,7 @@ function PopularCourseGrid() {
                        marginBottom={{base: '1.5rem'}}
                        gap={{base: '1rem', xl: '2rem'}}
                 >
-                    <Heading size={{base: 'sm', xl: 'md'}} color='white'>
+                    <Heading id='popular-course-list-heading' as="h2" size={{base: 'sm', xl: 'md'}} color='white'>
                     Check out our most popular courses!
                     </Heading>
                 </Stack>

@@ -9,7 +9,9 @@ type PopularCourseGridItemProps = {
 function PopularCourseGridItem(props: PopularCourseGridItemProps) {
     const {title, description, iconUrl} = props
     return (
-        <Card variant='elevated'
+        <Card as="article"
+              aria-labelledby={`course-area-${title.toLowerCase()}`}
+              variant='elevated'
               borderRadius={{base: '10px', lg: '15px'}}
               height={{base: 'calc(283px - 24px)', md: 'calc(346px - 24px)'}}
               maxHeight={{base: 'calc(283px - 24px)', md: 'calc(346px - 24px)'}}
@@ -40,7 +42,7 @@ function PopularCourseGridItem(props: PopularCourseGridItemProps) {
                        height='full'
                        justifyContent={{md: 'space-around'}}
                 >
-                    <Heading size='sm'>
+                    <Heading size='sm' as="h3" id={`course-area-${title.toLowerCase()}`}>
                         {title}
                     </Heading>
                     <Text textStyle={{base: 'smallText'}} fontWeight='medium' lineHeight='26px'
