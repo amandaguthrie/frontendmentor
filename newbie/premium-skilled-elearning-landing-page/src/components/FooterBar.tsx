@@ -4,6 +4,7 @@ import BaseStack from "./common/BaseStack.tsx";
 function FooterBar() {
     return (
         <BaseStack as="footer"
+                   marginTop='auto'
                    bgColor='dustyPurple.900'
                    color='white'
                    alignItems='center'

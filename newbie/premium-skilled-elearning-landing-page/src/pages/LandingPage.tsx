@@ -1,7 +1,7 @@
 import ModernCourseHero from "../components/ModernCourseHero.tsx";
 import PopularCourseGrid from "../components/PopularCourseGrid.tsx";
 import HeaderBar from "../components/HeaderBar.tsx";
-import {Flex} from "@chakra-ui/react";
+import {Box, Flex} from "@chakra-ui/react";
 import FooterBar from "../components/FooterBar.tsx";
 
 function LandingPage() {
@@ -11,8 +11,7 @@ function LandingPage() {
         xl: `url('/image-hero-desktop@2x.png') no-repeat 52vw -146.13px / 992px 937px transparent`
     }
     return (
-        <Flex as="main"
-              bg={responsiveBackground}
+        <Flex bg={responsiveBackground}
               direction='column'
               alignItems='center'
               width='100vw'
@@ -20,8 +19,10 @@ function LandingPage() {
 
         >
             <HeaderBar/>
+            <Box as="main">
             <ModernCourseHero/>
             <PopularCourseGrid/>
+            </Box>
             <FooterBar/>
         </Flex>
     );
