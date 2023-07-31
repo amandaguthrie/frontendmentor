@@ -1,6 +1,6 @@
 # Ping Coming Soon Landing Page
 
-<a href="" alt="View live implementation">
+<a href="https://fem-ping-coming-soon-page-ag.netlify.app" alt="View live implementation">
 <img src="https://img.shields.io/badge/View_Live_Implementation-seagreen?style=for-the-badge"></a>
 
 ## Design/Solution Comparison
@@ -12,9 +12,9 @@
 
 | Format  | Design                                                                                                                                                                                               | Solution                                                                                                                                                                                         |
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Desktop | <img src="/newbie/ping-coming-soon-age/design/desktop-design.jpg" width="375px" href="/newbie/ping-coming-soon-age/design/desktop-design.jpg" target="_blank">                                       | <img src="/newbie/ping-coming-soon-age/solution/ag-solution-desktop.png" width="375px" href="/newbie/ping-coming-soon-age/solution/ag-solution-desktop.png" target="_blank">                     |
+| Desktop | <img src="/newbie/ping-coming-soon-page/design/desktop-design.jpg" width="375px" href="/newbie/ping-coming-soon-page/design/desktop-design.jpg" target="_blank">                                       | <img src="/newbie/ping-coming-soon-page/solution/ag-solution-desktop.png" width="375px" href="/newbie/ping-coming-soon-page/solution/ag-solution-desktop.png" target="_blank">                     |
 | Tablet  | Not Provided                                                                                                                                                                                         | ---                                                                                                                                                                                              |
-| Mobile  | <img src="/newbie/ping-coming-soon-age/design/mobile-design.jpg" alt="Mobile Design" width="375px" alt="Mobile Design" href="/newbie/ping-coming-soon-age/design/mobile-design.jpg" target="_blank"> | <img src="/newbie/ping-coming-soon-age/solution/ag-solution-mobile.png" alt="Mobile Solution" width="375px" href="/newbie/ping-coming-soon-age/solution/ag-solution-mobile.png" target="_blank"> |
+| Mobile  | <img src="/newbie/ping-coming-soon-page/design/mobile-design.jpg" alt="Mobile Design" width="375px" alt="Mobile Design" href="/newbie/ping-coming-soon-page/design/mobile-design.jpg" target="_blank"> | <img src="/newbie/ping-coming-soon-page/solution/ag-solution-mobile.png" alt="Mobile Solution" width="375px" href="/newbie/ping-coming-soon-page/solution/ag-solution-mobile.png" target="_blank"> |
 
 
 
