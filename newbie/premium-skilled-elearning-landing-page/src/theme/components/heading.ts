@@ -1,9 +1,7 @@
 import {defineStyleConfig} from '@chakra-ui/react';
 
 export const Heading = defineStyleConfig({
-    baseStyle: {
-
-    },
+    baseStyle: {},
     sizes: {
         sm: {
             fontSize: '1.5rem', // 24px
@@ -27,7 +25,5 @@ export const Heading = defineStyleConfig({
         }
 
     },
-    variants: {
-
-    }
+    variants: {}
 })

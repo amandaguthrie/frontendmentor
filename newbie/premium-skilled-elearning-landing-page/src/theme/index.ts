@@ -7,6 +7,7 @@ import shadowsTheme from './foundations/shadows.ts';
 import fontSizes from "./foundations/font-sizes.ts";
 import textStyles from "./foundations/text-styles.ts"
 import {Button} from "./components/button.ts";
+import global from "./foundations/global-styles.ts";
 
 const myTheme: Record<string, any> = extendTheme({
     colors: themeColors,
@@ -19,6 +20,9 @@ const myTheme: Record<string, any> = extendTheme({
         body: `'Plus Jakarta Sans Variable', sans-serif`
     },
     fontSizes: fontSizes,
+    styles: {
+        global
+    },
     layerStyles: layerStyles,
     textStyles: textStyles,
     shadowsTheme

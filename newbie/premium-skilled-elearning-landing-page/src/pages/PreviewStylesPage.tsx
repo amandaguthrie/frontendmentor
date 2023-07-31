@@ -1,4 +1,4 @@
-import {Box, Button, Card, CardBody, CardHeader, Divider, Flex, Heading, Stack, Text} from "@chakra-ui/react";
+import {Button, Card, CardBody, CardHeader, Divider, Flex, Heading, Stack, Text} from "@chakra-ui/react";
 
 function PreviewStylesPage() {
     const colors = [
@@ -65,7 +65,11 @@ function PreviewStylesPage() {
         }
     ]
     return (
-        <Box margin='4rem'>
+        <Flex direction='column'
+              alignItems='center'
+              minHeight='100vh'
+              margin='4rem'
+        >
             <Heading size='md'>Color</Heading>
             <Divider marginTop='0.5rem' marginBottom='0.5rem'/>
             <Flex direction='row' wrap='wrap' gap='4rem'>
@@ -148,12 +152,12 @@ function PreviewStylesPage() {
             <Heading size='md' marginTop='4rem'>Buttons</Heading>
             <Divider marginTop='0.5rem' marginBottom='0.5rem'/>
             <Stack direction='row' gap='0.5rem'>
-                <Button variant='darkPurple' colorScheme='dustyPurple'>Theme Button</Button>
-                <Button variant='orangePinkGradient' colorScheme='dustyPurple'>Theme Button</Button>
-                <Button variant='purplePinkGradient' colorScheme='dustyPurple'>Theme Button</Button>
+                <Button variant='darkPurple'>Theme Button</Button>
+                <Button variant='orangePinkGradient'>Theme Button</Button>
+                <Button variant='purplePinkGradient'>Theme Button</Button>
             </Stack>
 
-        </Box>
+        </Flex>
     );
 }
 
