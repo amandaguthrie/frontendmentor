@@ -27,7 +27,7 @@ function HomePage() {
         marginTop="5rem"
         marginBottom={{ base: '1rem', md: '1.5rem' }}
         maxHeight={{ base: '1.5rem', md: '2.4375rem' }}
-        maxWidth={{ md: '5.625rem' }}
+        maxWidth={{ base: '3.5rem', md: '5.625rem' }}
       />
       <Heading
         as="h1"
