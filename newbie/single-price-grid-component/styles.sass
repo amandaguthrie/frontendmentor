@@ -1,0 +1,202 @@
+// Colors
+$blue-gray-light: #E6EFF5
+$bright-yellow: #C0DF33
+$cyan: #2AB3B1
+$gray-medium: #9AA7BE
+
+.color-bright-yellow
+  color: $bright-yellow
+
+.color-cyan
+  color: $cyan
+
+// Fonts
+/* Karla - 400, 700 */
+$karla: 'Karla', sans-serif
+
+// Styles
+body
+  background-color: $blue-gray-light
+  display: flex
+  font-family: $karla
+  font-size: 1rem
+  font-weight: 400
+  letter-spacing: -0.0125rem
+  min-height: 100vh
+  line-height: 1.625rem
+  margin: 0
+
+button
+  background-color: #C0DF33
+  border-radius: 0.3125rem
+  border-width: 0
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10)
+  color: white
+  flex-shrink: 0
+  font-family: $karla
+  font-size: 1rem
+  font-weight: 700
+  height: 3rem
+  width: 100%
+  transition: transform 0.9s cubic-bezier(0.61, 1, 0.88, 1)
+
+  &:hover
+    background-color: darken($cyan, 10%)
+    border-color: white
+    border-style: solid
+    border-width: 0.1rem
+    color: white
+    transition: transform 0.9s cubic-bezier(0.61, 1, 0.88, 1)
+
+h1, h2
+  font-weight: 700
+
+main
+  background-color: $cyan
+  border-color: transparent
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15)
+  color: white
+  height: auto
+  overflow: hidden
+  width: 100%
+
+ul
+  list-style: none
+  padding-left: 0
+
+.card
+  height: 100%
+  width: auto
+
+.card-cyan-light
+  background-color: rgba(255, 255, 255, 0.15185566875)
+
+.card-cyan-light ul
+  opacity: 0.75
+
+.card-cyan-price-text
+  color: white
+  font-size: 2rem
+  font-weight: 700
+  letter-spacing: -0.025rem
+  line-height: normal
+  vertical-align: middle
+
+.card-cyan-price-unit
+  font-size: 1rem
+  font-weight: 400
+  line-height: 1.625rem
+  margin-left: 0.25rem
+  opacity: 0.5
+
+.card-detail
+  display: flex
+  width: auto
+
+.card-light
+  background-color: white
+
+.card-light-text-highlight
+  color: $bright-yellow
+  font-weight: 700
+
+.card-light-text
+  color: $gray-medium
+
+.product
+  display: flex
+  width: auto
+
+
+// Mobile Styles
+@media (max-width: 64rem)
+  $mobile-padding-body: 2rem
+  $mobile-font-size-sm: 0.875rem
+  $mobile-font-sz-md: 1rem
+  $mobile-font-sz-lg: 1.25rem
+  $mobile-line-height-taller: 1.625rem
+
+  body
+    align-items: center
+    flex-direction: column
+    font-size: $mobile-font-size-sm
+    font-weight: 400
+    justify-content: flex-end
+    line-height: 1.25rem
+    margin-left: $mobile-padding-body
+    margin-right: $mobile-padding-body
+
+  h1
+    font-size: $mobile-font-sz-lg
+    line-height: normal
+
+  h2
+    color: white
+    font-size: $mobile-font-sz-lg
+    line-height: normal
+
+  main
+    border-radius: 0.3125rem
+    margin-top: 4.5rem
+    margin-bottom: 4.5rem
+
+  .product
+    flex-direction: column
+
+  .card
+    padding: 1.75rem
+
+  .card-light-text-highlight
+    font-size: 0.9375rem
+    line-height: 1.25rem
+
+  .card-detail
+    flex-direction: column
+
+  .card-light-text
+    line-height: $mobile-line-height-taller
+
+
+// Desktop Styles
+@media (min-width: 64rem)
+  $desktop-padding-body: max(25rem, 28vw)
+  body
+    align-items: center
+    font-size: 1rem
+    justify-content: center
+    line-height: 1.625rem
+    margin-left: $desktop-padding-body
+    margin-right: $desktop-padding-body
+
+  h1
+    font-size: 1.5rem
+    line-height: normal
+
+  h2
+    font-size: 1.125rem
+    line-height: normal
+
+  main
+    border-radius: 0.5rem
+
+  .card
+    padding: 2.5rem
+
+  .product
+    flex-direction: column
+
+  .card-detail
+    flex-direction: row
+    justify-content: center
+
+  .card-cyan-light
+    flex-grow: 1
+    font-size: 0.875rem
+    line-height: 1.25rem
+
+  .card-light-text-highlight
+    font-size: 1.125rem
+    line-height: normal
+
+
+
