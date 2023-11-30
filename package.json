@@ -1,0 +1,10 @@
+{
+  "name": "frontendmentor",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  },
+  "overrides": {
+    "typescript": "typescript"
+  }
+}
