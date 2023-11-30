@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^5.0.4"
-  },
-  "dependencies": {
-    "@fontsource-variable/manrope": "^5.0.17"
   }
 }
