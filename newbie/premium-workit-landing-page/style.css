@@ -106,10 +106,16 @@
     .container {
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
         align-items: center;
         align-self: center;
-        margin-inline: clamp(1rem, 8vw, calc(100vw - 1100px));
-        width: auto;
+        margin-inline: clamp(2vw, 5vw, 1rem);
+        @media (min-width: 768px) {
+            margin-inline: clamp(5vw, 4rem, 10vw);
+        }
+        @media (min-width: 1100px) {
+            margin-inline: clamp(5vw, 10vw, calc(100vw - 1100px));
+        }
     }
 
     .button-primary, .button-secondary {
@@ -150,6 +156,7 @@
     }
 
     .features-grid {
+        align-items: flex-start;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -179,7 +186,13 @@
     .features-grid-text-stack {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 1rem;
+        @media (min-width: 500px) and (max-width: 768px) {
+            align-items: flex-start;
+            text-align: left;
+        }
     }
 
     .footer {
@@ -202,14 +215,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @media (min-width: 768px) {
-            flex-direction: row;
-            align-items: unset;
-            justify-items: center;
-        }
         gap: 1rem;
         margin-bottom: 4rem;
         max-width: 65%;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: unset;
+            max-width: unset;
+        }
+        @media (min-width: 1440px) {
+            max-width: 75%;
+        }
+
     }
 
     .founder-article {
@@ -222,6 +240,7 @@
         flex-grow: 1;
         flex-wrap: wrap;
         gap: 1rem;
+        width: 100%;
         padding: min(2rem, 4rem);
         margin-top: -2rem;
         @media (min-width: 768px) {
@@ -253,6 +272,9 @@
     .founder-image {
         object-fit: contain;
         max-width: calc(954px / 3);
+        @media (min-width: 768px) {
+            max-width: calc(954px / 4);
+        }
     }
 
     .header-stack {
@@ -261,10 +283,12 @@
         flex-direction: column;
         gap: 2.5rem;
         padding-top: 2.5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 8rem;
         @media (min-width: 768px) {
             gap: 3.125rem;
+            margin-inline: auto;
             padding-top: 3.125rem;
+            max-width: 40rem;
         }
     }
 
