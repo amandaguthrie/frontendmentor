@@ -1,0 +1,120 @@
+$font-big-shoulders-display: 'Big Shoulders Display', sans-serif
+$font-lexend-deca: 'Lexend Deca', sans-serif
+
+
+\:root
+  --border-radius-md: 1.5625rem
+  --clr-orange-500: hsl(31, 77%, 52%)
+  --clr-cyan-800: hsl(184, 100%, 22%)
+  --clr-cyan-900: hsl(179, 100%, 13%)
+  --clr-whiteAlpha-800: hsl(0, 0%, 100%, 0.75)
+  --clr-gray-50: hsl(0, 0%, 95%)
+  --font-title: #{$font-big-shoulders-display}
+  --font-text: #{$font-lexend-deca}
+
+body
+  color: var(--clr-gray-50)
+  display: flex
+  font-family: var(--font-text)
+  font-size: 0.9375rem
+  font-weight: 400
+  justify-content: center
+  @media (max-width: 959px)
+    margin-block: 5.5rem
+    margin-inline: 1.5rem
+
+button
+  background-color: var(--clr-gray-50)
+  border-color: transparent
+  border-radius: var(--border-radius-md)
+  border-style: solid
+  border-width: 2px
+  height: 3rem
+  padding-block: 0.75rem
+  padding-inline: 2rem
+  width: fit-content
+
+  &:hover
+    background-color: transparent
+    border-color: var(--clr-gray-50)
+    color: var(--clr-gray-50)
+    cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+  font-family: var(--font-title)
+  font-size: 2.5rem
+  font-weight: 700
+  line-height: 1.1
+  margin-block-end: 0.5rem
+  margin-block-start: 0
+  margin-inline-end: 0
+  margin-inline-start: 0
+  text-transform: uppercase
+
+img
+  display: block
+
+.main
+  border-color: transparent
+  border-radius: var(--border-radius-md)
+  border-style: solid
+  border-width: 0
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: [full-start] 3rem [content-start] 3rem 3rem auto 3rem [content-end] 3rem [full-end]
+  overflow: hidden
+  margin-block: auto
+  row-gap: 1rem
+  height: 31.25rem
+  width: 57.5rem
+  @media (max-width: 959px)
+    display: flex
+    flex-direction: column
+    height: unset
+    row-gap: unset
+    width: unset
+
+
+.article
+  display: grid
+  grid-template-columns: subgrid
+  grid-template-rows: subgrid
+  grid-row: full
+  padding: 3rem
+  @media (max-width: 959px)
+    grid-template-rows: [full-start] 3rem [content-start] 3rem 3rem auto 3rem [content-end] 3rem [full-end]
+
+.article-content
+  column-span: 1
+  display: grid
+  grid-template-columns: subgrid
+  grid-template-rows: subgrid
+  grid-row: content
+  row-gap: 1.5rem
+
+[data-scheme="orange"]
+  background-color: var(--clr-orange-500)
+
+  button
+    color: var(--clr-orange-500)
+
+    &:hover
+      color: var(--clr-gray-50)
+
+[data-scheme="teal-light"]
+  background-color: var(--clr-cyan-800)
+
+  button
+    color: var(--clr-cyan-800)
+
+    &:hover
+      color: var(--clr-gray-50)
+
+[data-scheme="teal-dark"]
+  background-color: var(--clr-cyan-900)
+
+  button
+    color: var(--clr-cyan-900)
+
+    &:hover
+      color: var(--clr-gray-50)
